@@ -4,8 +4,9 @@ node_js:
 after_success:
   - "sudo apt-get install build-essential"
   - "sudo apt-get install ruby-dev"
-  - "sudo gem install tilt"
+  - "sudo apt-get install libgemplugin-ruby"
   - "sudo apt-get install puppet"
+  - "sudo gem install tilt"
   - "sudo gem install azure"
   - "sudo gem install net-ssh"
   - "sudo gem install net-scp"
