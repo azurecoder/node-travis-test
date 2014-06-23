@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "0.11"
-after_install:
+after_success:
   - "sudo apt-get install build-essential"
   - "sudo apt-get install ruby-dev"
   - "sudo gem install tilt"
