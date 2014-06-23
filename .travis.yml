@@ -3,7 +3,7 @@ node_js:
   - "0.11"
 after_success:
   - "sudo apt-get install build-essential"
-  - "sudo apt-add-repository ppa:brightbox/ruby-ng"
+  - "sudo apt-add-repository -y ppa:brightbox/ruby-ng"
   - "sudo apt-get update"
   - "sudo apt-get install ruby2.1 ruby2.1-dev"
   - "sudo update-alternatives --set ruby /usr/bin/ruby2.1"    
