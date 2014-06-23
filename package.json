@@ -4,5 +4,8 @@
   "author": "Richard and David",
    "scripts": {
     "test": "nodeunit tests.js"},
+   "dependencies": {
+    "nodeunit": ">= 0.9"
+  },
   "engine": "node 0.11"
 }
