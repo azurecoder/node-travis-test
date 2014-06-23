@@ -1,3 +1,13 @@
 language: node_js
 node_js:
   - "0.11"
+after_install:
+  - "sudo apt-get install build-essential"
+  - "sudo apt-get install ruby-dev"
+  - "sudo gem install tilt"
+  - "sudo apt-get install puppet"
+  - "sudo gem install azure"
+  - "sudo gem install net-ssh"
+  - "sudo gem install net-scp"
+  - "sudo gem install winrm"
+  - "sudo gem install highline"
