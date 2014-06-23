@@ -1,0 +1,8 @@
+{
+  "name": "node-puppet-azure-test",
+  "description": "To test node and puppet using travis ci",
+  "author": "Richard and David",
+   "scripts": {
+    "test": "nodeunit tests.js"},
+  "engine": "node 0.11"
+}
