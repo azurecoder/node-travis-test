@@ -6,7 +6,7 @@ after_success:
   - "sudo apt-add-repository ppa:brightbox/ruby-ng"
   - "sudo apt-get update"
   - "sudo apt-get install ruby2.1 ruby2.1-dev"
-  - "sudo update-alternatives --set ruby /usr/bin/ruby2.1"
+  - "sudo update-alternatives --set ruby /usr/bin/ruby2.1"    
   - "sudo apt-get install libgemplugin-ruby"
   - "sudo apt-get install puppet"
   - "sudo gem install tilt"
