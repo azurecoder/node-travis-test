@@ -34,7 +34,7 @@ after_success:
   - "sleep 180"
   - "sudo puppet azure_vm bootstrap --puppet-master-ip=elastapuppet.cloudapp.net --ssh-user=jed --ssh-port=22 --password=P@ssword761 --node-ipaddress armcs-01.cloudapp.net --ssh-port=22"
   - "sudo puppet azure_vm add_role --management-certificate ./elasta.pem --azure-subscription-id 5191b16a-673d-426c-8c55-fdd912858e4e --image b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140416.1-en-us-30GB --vm-name puppet2-oddkinz --vm-user jed --password 'P@ssword761' --cloud-service-name armcs-01 --storage-account-name mtlytics --ssh-port=23"
-  - "sleep 180"
+  - "sleep 180" 
   - "sudo puppet azure_vm bootstrap --puppet-master-ip=elastapuppet.cloudapp.net --ssh-user=jed --ssh-port=22 --password=P@ssword761 --node-ipaddress armcs-01.cloudapp.net --ssh-port=23"
   - "sudo puppet azure_vm update_endpoint --management-certificate ./elasta.pem --azure-subscription-id 5191b16a-673d-426c-8c55-fdd912858e4e --cloud-service-name=armcs-01 --endpoint-name=arm-cs --load-balanced-endpoint='fred' --local-port=80 --load-balancer-port=80 --vm-name puppet1-oddkinz"
   - "sudo puppet azure_vm update_endpoint --management-certificate ./elasta.pem --azure-subscription-id 5191b16a-673d-426c-8c55-fdd912858e4e --cloud-service-name=armcs-01 --endpoint-name=arm-cs --load-balanced-endpoint='fred' --local-port=80 --load-balancer-port=80 --vm-name puppet2-oddkinz"
