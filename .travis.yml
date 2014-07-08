@@ -21,7 +21,7 @@ after_success:
   - "sudo mkdir vagrant-project"
   - "cd vagrant-project/"
   - "sudo vagrant init azure"
-  - "sudo wget http://apt.puppetlabs.com/puppetlabs-release-precise.deb"
+  - "sudo wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb"
   - "sudo dpkg -i puppetlabs-release-precise.deb"
   - "sudo puppet module install msopentech-windowsazure"
   - "cd ~"
