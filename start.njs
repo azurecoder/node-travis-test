@@ -29,7 +29,7 @@ console.log("rew: " + requestNo)
 
 
 
-http.createServer(app).listen(1337, function() {
+http.createServer(app).listen(80, function() {
   //  var os = Os()
 	console.log(os.hostname())
 
