@@ -5,7 +5,9 @@
    "scripts": {
     "test": "nodeunit tests.js"},
    "dependencies": {
-    "nodeunit": ">= 0.9"
+    "nodeunit": ">= 0.9",
+    "express": ">= 3.0.0"
+    
   },
   "engine": "node 0.11"
 }
